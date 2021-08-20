@@ -1,0 +1,59 @@
+body{
+    font-family: Perpetua;
+    font-size: 50px;
+    color: #f673aa;
+    
+}
+h2{
+    margin: 0;
+}
+.contenedor2{
+display: flex;
+/* flex-wrap: wrap;
+flex-direction: column; */
+flex-flow: column wrap;
+justify-content: center;
+height: 400px;
+width: 100%;
+}
+.Texto{
+    z-index:1;
+    font-size: 40px;
+    text-align: center; 
+}
+.HijoImagen{
+z-index: 2;
+animation-name: nube3;
+animation-duration: 4s;
+animation-iteration-count: infinite;
+}
+.HijoImagen img{
+    
+    
+}
+.HijoButton {
+ width: 100%;
+ z-index: 3;
+ position: absolute;
+ display: flex;
+ flex-flow: column wrap;
+ align-content: center;
+ 
+}
+.HijoButton button{
+    border-radius: 50px;
+    background-color: #f673aa;
+    color: white;
+    font-size: xx-large;
+}
+#img2{
+    width: 100%;
+}
+@keyframes nube3 {
+    0%{top: 0px;left: 0px;
+        opacity: 1;
+        right: 0px;}
+    100%{top: 0;left: 0;
+        opacity: .1;
+        right: 0px;}
+}
